@@ -1,0 +1,71 @@
+/* Estilos Responsive para pantallas pequeñas */
+
+@media screen and (max-width: 768px) {
+
+    /* Encabezado principal */
+    #Inicio {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 47%;
+        text-align: center;
+        
+    }
+
+    #Inicio h1 {
+        font-size: 28px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Navegación */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Imagen de portada */
+    img.fondo {
+        height: 250px;
+    }
+
+    /* Contacto */
+    #contacto {
+        margin: 15px auto;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    /* Títulos */
+    #actividadvinces1 h2,
+    #actividadrama1 h2 {
+        font-size: 22px;
+        margin-left: 5%;
+    }
+
+    /* Párrafos */
+    #actividad1 p,
+    section.parrafo p {
+        width: 85%;
+        font-size: 18px;
+        margin: 15px auto;
+    }
+
+    /* Imágenes */
+    #imagenes, #imgdistrito, .galeria  {
+        flex-direction: column !important;
+        gap: 10px;
+    }
+
+    #imagenes img, .galeria, #imgdistrito{
+        width: 70%;
+        max-width: 300px;
+    }
+}

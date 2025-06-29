@@ -1,0 +1,224 @@
+/* Archivo de estilos CSS para la página web */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=DM+Serif+Display:ital@0;1&family=Kapakana:wght@300..400&family=Lora:ital,wght@0,400..700;1,400..700&family=Titan+One&display=swap');
+
+:root {
+    --Encabezados: #FAF9F6;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Inicio h1 {
+    font-family: 'Caprasimo', serif;
+    color: #333;
+    font-weight: 100;
+    background-color: var(--Encabezados);
+    font-size: 36px;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+}
+
+main {
+    margin: 50px;
+}
+
+#Inicio,
+.nav,
+#contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Encabezados);
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: var(--Encabezados);
+    margin: 5px;
+}
+
+nav ul li {
+    margin: 0 20px;
+    list-style: none;
+    font-size: 16px;
+    align-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #007da5;
+    /* Cambia el color al pasar el mouse */
+}
+
+nav,
+#contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: var(--Encabezados);
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+
+#contacto {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 35px;
+    width: 2em;
+    height: 2em;
+    margin-left: 15px;
+}
+
+img.fondo {
+    object-fit: cover;
+    object-position: unset;
+    display: block;
+    transition: all 0.5s ease;
+    /*object-position: 55% 33.5%;*/
+    height: 400px;
+    width: 100%;
+    transition: 1s;
+    border-radius: 0.125rem;
+}
+img.fondo:hover{
+       
+    transform: scale(1.05);
+}
+
+
+#actividadvinces1 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 27px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    margin-left: 10%;
+
+
+}
+
+#actividadvinces1 h2,
+div {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+div#actividad1>#imagenes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    align-content: space-around;
+
+
+}
+
+.imagen_rama1,
+.imagen_rama1_2 {
+    width: 10rem;
+    margin: 3px 0;
+    border-radius: 5px;
+    align-content: space-around;
+
+}
+
+
+div#actividad1>p {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: start;
+    width: 60%;
+    margin-left: 10%;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.galeria1 {
+    height: 15rem;
+    width: 15rem;
+    margin: 20px 100px 20px 100px;
+    border-radius: 50%;
+   
+}
+
+
+#actdistrito {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+#Distrito h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 27px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    margin-left: 16%;
+}
+
+#distritop {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: start;
+    align-content: center;
+    width: 100%;
+    padding: 1% 16% 1% 16%;
+}
+
+#imgdistrito {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 30px 60px;<
+}
+
+.distrito1,
+.distrito2,
+.distrito3 {
+    height: 14rem;
+    width: 14rem;
+    margin: 30px 60px 30px 60px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    object-position: 77.82% 31.09%;
+}
+
+.distrito1:hover {
+    height: 15.5rem;
+    width: 15.5rem;
+
+}
+
+.distrito2:hover {
+    height: 15.5rem;
+    width: 15.5rem;
+}
+
+.distrito3:hover {
+    height: 15.5rem;
+    width: 15.5rem;
+}
