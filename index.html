@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/ChatGPT Image 12 jun 2025, 22_44_11.png" type="image/x-icon">
+    <link rel="shortcut icon" href="ChatGPT Image 12 jun 2025, 22_44_11.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="responsivo.css">
+    <script src="/js/metodo.js"></script>
     <title>Distrito Vinces</title>
 </head>
 
@@ -17,25 +21,31 @@
             <ul>
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Actividades</a></li>
-                <li><a href="">Anuncios</a></li>
-                <li><a href="">Galería</a></li>
-                <li><a href="">informes</a></li>
-                <li><a href="">Ramas</a></li>
-            </ul>
+                <li><a href="#Calendario">Calendario</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="" class="menu-con-submenu">Ramas</a></a>
+                    <ul>
+                        <li><a href="Rama1.html">Rama Vinces 1</a></li>
+                        <li><a href="Rama2.html">Rama Vinces 2</a></li>
+                        <li><a href="RamaBalzar.html">Rama Balzar</a></li>
+                    </ul>
+                </li>
         </nav>
+        <div class="overlay" id="overlay"></div>
         <a href="https://www.facebook.com/people/Rama-Vinces-1/61572206294541/" target="_blank">
-            <img src="img/icons8-facebook-nuevo-48.png" alt="Descripción" id="contacto">
+            <img src="icons8-facebook-nuevo-48.png" alt="Descripción" id="contacto">
         </a>
     </header>
     <a>
-        <img src="img/jesuschrist.jpg" alt="Facebook" class="fondo">
+        <img src="jesuschrist.jpg" alt="Facebook" class="fondo">
     </a>
     <main>
-        <section>
+        <section id="distrito">
             <header id="Distrito">
                 <h2>Distrito Vinces</h2>
                 <div id="distritop">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error, voluptatum sed officiis
+                    <p id="distritop">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error,
+                        voluptatum sed officiis
                         cumque nobis vero nam asperiores labore officia, nostrum eos. Ipsam quis ratione ullam tempora,
                         possimus, quo ipsum aliquid cumque suscipit doloremque fugiat aliquam veniam obcaecati ad!
                         Minima, ad earum quod expedita aliquid voluptatibus quaerat incidunt et ipsum officia. Mollitia
@@ -44,19 +54,39 @@
                         Voluptate fuga iusto voluptatibus quaerat officia magnam nam doloribus, rerum quae dolor unde
                         minima, minus quibusdam est vel, voluptatem quas suscipit reiciendis.
                     </p>
+
                 </div>
             </header>
             <div id="imgdistrito">
-                <img src="img/reunion.jpg" alt="Facebook" class="distrito1">
-                <img src="img/capilla.jpg" alt="Facebook" class="distrito2">
-                <img src="img/jesuschrist.jpg" alt="Facebook" class="distrito3">
+                <img src="jesuschrist.jpg" alt="Facebook" class="distrito1">
+                <img src="jesuschrist.jpg" alt="Facebook" class="distrito1">
+                <img src="jesuschrist.jpg" alt="Facebook" class="distrito1">
             </div>
         </section>
-        <section>
-            <header id="actividadvinces1">
-                <h2>Rama Vinces 1</h2>
-                <div id="actividad1">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error, voluptatum sed officiis
+
+        <section id="galeria-section">
+
+            <h2 id="galeria"><a id="galeria" href="/html/Galeria.html" target="_blank">GALERIA</a></h2>
+            <div class="galeria">
+
+                <img src="capilla.jpg" alt="Facebook" class="galeria1">
+
+                <img src="reunion.jpg" alt="Facebook" class="galeria1">
+
+                <img src="reunion.jpg" alt="Facebook" class="galeria1">
+
+                <img src="capilla.jpg" alt="Facebook" class="galeria1">
+
+            </div>
+        </section>
+        <section id="historiasdefe">
+            <div class="historiasdefe">
+                <h2>HISTORIAS DE FE</h2>
+                <h5>Nunca olvidaremos</h5>
+                <img src="capilla.jpg" alt="img de historias de fe" class="imghistoriasdefe">
+                <div>
+                    <p id="historiasdefep">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error,
+                        voluptatum sed officiis
                         cumque nobis vero nam asperiores labore officia, nostrum eos. Ipsam quis ratione ullam tempora,
                         possimus, quo ipsum aliquid cumque suscipit doloremque fugiat aliquam veniam obcaecati ad!
                         Minima, ad earum quod expedita aliquid voluptatibus quaerat incidunt et ipsum officia. Mollitia
@@ -64,86 +94,70 @@
                         nesciunt sit expedita sapiente numquam magni non aliquam hic quam ipsam quae, quidem labore.
                         Voluptate fuga iusto voluptatibus quaerat officia magnam nam doloribus, rerum quae dolor unde
                         minima, minus quibusdam est vel, voluptatem quas suscipit reiciendis.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quam quia veritatis
+                        laboriosam vero praesentium, voluptate eius expedita eos dicta deserunt reiciendis recusandae
+                        autem maiores quod quo libero! Sit quia veritatis provident, tempora tenetur quidem consectetur
+                        iusto omnis nostrum illo, saepe cumque eum hic dolores dignissimos. Ut tenetur obcaecati, culpa
+                        rem quo tempore eveniet consequatur ab. Quisquam, magnam. Quisquam, magnam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo doloribus sunt earum
+                        dolorum dolore magnam, beatae, iste quaerat, ut ipsa dicta possimus alias praesentium quam
+                        perferendis nulla error! Dolore alias reiciendis repudiandae repellat totam rem voluptatem et?
+                        Iusto totam aliquid illo pariatur. Dolorem rerum quo illum aperiam ad, ab dolores ea inventore
+                        soluta hic numquam aut nobis a repellendus quis saepe modi reiciendis, quia cumque incidunt
+                        consectetur laborum id. Eum numquam doloremque, qui voluptatem commodi quisquam obcaecati
+                        perspiciatis a?
                     </p>
-                    <div id="imagenes">
-                        <a href="https://www.facebook.com/photo?fbid=122127053834740209&set=a.122103634376740209"
-                            target="_blank">
-                            <img src="https://scontent.fgye25-1.fna.fbcdn.net/v/t39.30808-6/505752605_122127053840740209_936938189840955579_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QnBSOeER1uoQ7kNvwFZIfAZ&_nc_oc=Adm9IwwffHWNaT7qASQmHtQyZHoSTAiE2s84ft0NSwoh2tmSCnO_Byjxv0MeM98r2IY&_nc_zt=23&_nc_ht=scontent.fgye25-1.fna&_nc_gid=AEBYaLf1hhoXs2SAQUdsRA&oh=00_AfN7AKVeznOttEFkX8qxRI8mEClpCJsbJxOcVkNMsJQUQA&oe=6866382D"
-                                alt="Facebook" class="imagen_rama1">
-                        </a>
-                        <a href="https://www.facebook.com/photo/?fbid=122103116876740209&set=a.122103111914740209"
-                            target="_blank">
-                            <img src="img/jesuschrist.jpg" alt="Facebook" class="imagen_rama1_2">
-                        </a>
+
+                </div>
+            </div>
+
+            <section id="Calendario">
+                <div class="Calendario">
+                    <h2>CALENDARIO DE ACTIVIDADES</h2>
+                    <div>
+                        <table class="table table-hover">
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Actividad</th>
+                                <th>Lugar</th>
+                            </tr>
+                            <tr>
+                                <td>10/06/2024</td>
+                                <td>Actividad Deportiva</td>
+                                <td>Capilla De Vinces</td>
+                            </tr>
+                            <tr>
+                                <td>15/06/2024</td>
+                                <td>Servicio comunitario</td>
+                                <td>Parque Central</td>
+                            </tr>
+                            <tr>
+                                <td>20/06/2024</td>
+                                <td>Clase de Seminario</td>
+                                <td>Capilla de Vinces</td>
+                            </tr>
+                            <tr>
+                                <td>25/06/2024</td>
+                                <td>Clases de Instituto</td>
+                                <td>Capilla de Vinces</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-            </header>
+            </section>
         </section>
-        <section class="galeria">
-            <a href="https://www.facebook.com/photo?fbid=122127053834740209&set=a.122103634376740209" target="_blank">
-                <img src="https://scontent.fgye25-1.fna.fbcdn.net/v/t39.30808-6/502600499_122128359302740209_1786184268297106561_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ICI9IO09TvAQ7kNvwHeO2Pp&_nc_oc=AdkzOI9QjhZaegI8Qnumc8IW3iShptDF793AxdnpX2d82Yhx34yjmbMCVDCpzU9Q9YM&_nc_zt=23&_nc_ht=scontent.fgye25-1.fna&_nc_gid=jxJilJXXXKqM584nOhhxkg&oh=00_AfPJsFUCQH1jqYeTTQy6vMBMRwOPPx-RgmmN9UzI6DckiQ&oe=686610B2"
-                    alt="Facebook" class="galeria1">
-            </a>
-            <a href="https://www.facebook.com/photo?fbid=122127053834740209&set=a.122103634376740209" target="_blank">
-                <img src="https://scontent.fgye25-1.fna.fbcdn.net/v/t39.30808-6/502600499_122128359302740209_1786184268297106561_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ICI9IO09TvAQ7kNvwHeO2Pp&_nc_oc=AdkzOI9QjhZaegI8Qnumc8IW3iShptDF793AxdnpX2d82Yhx34yjmbMCVDCpzU9Q9YM&_nc_zt=23&_nc_ht=scontent.fgye25-1.fna&_nc_gid=jxJilJXXXKqM584nOhhxkg&oh=00_AfPJsFUCQH1jqYeTTQy6vMBMRwOPPx-RgmmN9UzI6DckiQ&oe=686610B2"
-                    alt="Facebook" class="galeria1">
-            </a>
-        </section>
-        <section>
-            <header id="actividadvinces1">
-                <h2>Rama Vinces 2</h2>
-                <div id="actividad1">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error, voluptatum sed officiis
-                        cumque nobis vero nam asperiores labore officia, nostrum eos. Ipsam quis ratione ullam tempora,
-                        possimus, quo ipsum aliquid cumque suscipit doloremque fugiat aliquam veniam obcaecati ad!
-                        Minima, ad earum quod expedita aliquid voluptatibus quaerat incidunt et ipsum officia. Mollitia
-                        eos voluptate deserunt molestiae laboriosam, ipsum minus incidunt nobis aperiam saepe facere
-                        nesciunt sit expedita sapiente numquam magni non aliquam hic quam ipsam quae, quidem labore.
-                        Voluptate fuga iusto voluptatibus quaerat officia magnam nam doloribus, rerum quae dolor unde
-                        minima, minus quibusdam est vel, voluptatem quas suscipit reiciendis.
-                    </p>
-                    <div id="imagenes">
 
-                        <a href="https://www.facebook.com/photo?fbid=122127053834740209&set=a.122103634376740209"
-                            target="_blank">
-                            <img src="https://scontent.fgye25-1.fna.fbcdn.net/v/t39.30808-6/505752605_122127053840740209_936938189840955579_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QnBSOeER1uoQ7kNvwFZIfAZ&_nc_oc=Adm9IwwffHWNaT7qASQmHtQyZHoSTAiE2s84ft0NSwoh2tmSCnO_Byjxv0MeM98r2IY&_nc_zt=23&_nc_ht=scontent.fgye25-1.fna&_nc_gid=AEBYaLf1hhoXs2SAQUdsRA&oh=00_AfN7AKVeznOttEFkX8qxRI8mEClpCJsbJxOcVkNMsJQUQA&oe=6866382D"
-                                alt="Facebook" class="imagen_rama1">
-                        </a>
-                        <a href="https://www.facebook.com/photo/?fbid=122103116876740209&set=a.122103111914740209"
-                            target="_blank">
-                            <img src="img/jesuschrist.jpg" alt="Facebook" class="imagen_rama1_2">
-                        </a>
-                    </div>
-            </header>
-        </section>
-        <section>
-            <header id="actividadvinces1">
-                <h2>Rama Balzar</h2>
-                <div id="actividad1">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error, voluptatum sed officiis
-                        cumque nobis vero nam asperiores labore officia, nostrum eos. Ipsam quis ratione ullam tempora,
-                        possimus, quo ipsum aliquid cumque suscipit doloremque fugiat aliquam veniam obcaecati ad!
-                        Minima, ad earum quod expedita aliquid voluptatibus quaerat incidunt et ipsum officia. Mollitia
-                        eos voluptate deserunt molestiae laboriosam, ipsum minus incidunt nobis aperiam saepe facere
-                        nesciunt sit expedita sapiente numquam magni non aliquam hic quam ipsam quae, quidem labore.
-                        Voluptate fuga iusto voluptatibus quaerat officia magnam nam doloribus, rerum quae dolor unde
-                        minima, minus quibusdam est vel, voluptatem quas suscipit reiciendis.
-                    </p>
-                    <div id="imagenes">
-                        <a href="https://www.facebook.com/photo?fbid=122127053834740209&set=a.122103634376740209"
-                            target="_blank">
-                            <img src="https://scontent.fgye25-1.fna.fbcdn.net/v/t39.30808-6/505752605_122127053840740209_936938189840955579_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QnBSOeER1uoQ7kNvwFZIfAZ&_nc_oc=Adm9IwwffHWNaT7qASQmHtQyZHoSTAiE2s84ft0NSwoh2tmSCnO_Byjxv0MeM98r2IY&_nc_zt=23&_nc_ht=scontent.fgye25-1.fna&_nc_gid=AEBYaLf1hhoXs2SAQUdsRA&oh=00_AfN7AKVeznOttEFkX8qxRI8mEClpCJsbJxOcVkNMsJQUQA&oe=6866382D"
-                                alt="Facebook" class="imagen_rama1">
-                        </a>
-                        <a href="https://www.facebook.com/photo/?fbid=122103116876740209&set=a.122103111914740209"
-                            target="_blank">
-                            <img src="img/jesuschrist.jpg" alt="Facebook" class="imagen_rama1_2">
-                        </a>
-                    </div>
-            </header>
-        </section>
 
     </main>
+
+    <footer>
+        <div class="footer">
+            <a href="https://www.facebook.com/people/Rama-Vinces-1/61572206294541/" target="_blank">
+                <img src="facebook-circle.png" alt="logofacebook">
+            </a>
+            <p>&copy; 2025 Distrito Vinces. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
