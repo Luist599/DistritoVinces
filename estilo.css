@@ -1,104 +1,4 @@
 /* Archivo de estilos CSS para la página web */
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=DM+Serif+Display:ital@0;1&family=Kapakana:wght@300..400&family=Lora:ital,wght@0,400..700;1,400..700&family=Titan+One&display=swap');
-
-:root {
-    --Encabezados: #FAF9F6;
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#Inicio h1 {
-    font-family: 'Caprasimo', serif;
-    color: #333;
-    font-weight: 100;
-    background-color: var(--Encabezados);
-    font-size: 36px;
-    text-align: left;
-    padding: 10px;
-    width: 100%;
-}
-
-main {
-    margin: 50px;
-}
-
-#Inicio,
-.nav,
-#contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--Encabezados);
-    width: 100%;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    background-color: var(--Encabezados);
-    margin: 5px;
-}
-
-nav ul li {
-    margin: 0 20px;
-    list-style: none;
-    font-size: 16px;
-    align-content: center;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-nav ul li a:hover {
-    color: #007da5;
-    /* Cambia el color al pasar el mouse */
-}
-
-nav,
-#contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    background-color: var(--Encabezados);
-    margin-left: 10px;
-    margin-right: 5px;
-
-}
-
-#contacto {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 35px;
-    width: 2em;
-    height: 2em;
-    margin-left: 15px;
-}
-
-img.fondo {
-    object-fit: cover;
-    object-position: unset;
-    display: block;
-    transition: all 0.5s ease;
-    /*object-position: 55% 33.5%;*/
-    height: 400px;
-    width: 100%;
-    transition: 1s;
-    border-radius: 0.125rem;
-}
-img.fondo:hover{
-       
-    transform: scale(1.05);
-}
-
 
 #actividadvinces1 h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -132,7 +32,7 @@ div#actividad1>#imagenes {
 
 .imagen_rama1,
 .imagen_rama1_2 {
-    width: 10rem;
+    width: 15rem;
     margin: 3px 0;
     border-radius: 5px;
     align-content: space-around;
@@ -143,26 +43,54 @@ div#actividad1>#imagenes {
 div#actividad1>p {
     font-family: 'Lora', serif;
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.8;
     text-align: start;
-    width: 60%;
+    width: 80%;
     margin-left: 10%;
 }
 
-.galeria {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
-.galeria1 {
-    height: 15rem;
-    width: 15rem;
-    margin: 20px 100px 20px 100px;
-    border-radius: 50%;
-   
-}
+  #galeria-section {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: 100%;
+            padding: 20px 0px 100px 0px;
+            margin: 6% 0 6% 0;
+            display: block;
+            overflow: hidden; 
+            
+        }
 
+       #galeria {
+            text-decoration: none;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+            
+        }
+        
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+        
+    .galeria1 {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .galeria1:hover {
+            transform: scale(1.03);
+        } 
 
 #actdistrito {
     text-align: center;
@@ -187,38 +115,148 @@ div#actividad1>p {
     text-align: start;
     align-content: center;
     width: 100%;
-    padding: 1% 16% 1% 16%;
+    padding: 1% 9% 1% 9%;
 }
 
 #imgdistrito {
     display: flex;
-    justify-content: space-between;
-    padding: 30px 60px 30px 60px;<
+    padding:0px 0px;
+    justify-content: center;
+    margin: 6% 6%; ;
 }
 
-.distrito1,
-.distrito2,
-.distrito3 {
-    height: 14rem;
-    width: 14rem;
-    margin: 30px 60px 30px 60px;
+.distrito1{
+    height: 20rem;
+    width: 20rem;
+    margin: 20px 60px 20px 60px;
     border-radius: 50%;
-    transition: all 0.5s ease;
-    object-position: 77.82% 31.09%;
 }
 
-.distrito1:hover {
-    height: 15.5rem;
-    width: 15.5rem;
 
+/*Submenu*/
+
+
+ ul li ul {
+    position:absolute;
+   background-color: var(--Fondo);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    margin-left: -20px;
+    height:fit-content;
+    width: 160px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px  10px 0px;
+    display: none;
 }
 
-.distrito2:hover {
-    height: 15.5rem;
-    width: 15.5rem;
+ ul li::after ul{
+    margin-top: 5px;
+    margin-left: -20px;
 }
 
-.distrito3:hover {
-    height: 15.5rem;
-    width: 15.5rem;
+ /* Mostrar submenú cuando tiene la clase 'active' */
+        ul li ul.active {
+            display: flex !important;
+        }
+        
+        /* Estilos de los items del submenú */
+        ul li ul li {
+            width: 100%;
+        }
+        
+        ul li ul li a {
+            background: transparent;
+            border-radius: 0;
+            padding: 8px 20px;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        ul li ul li a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        /* Overlay para cerrar al hacer clic fuera */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: -1;
+        }
+
+ /* HISTORIAS DE FE Y CALENDARIO DE ACTIVIDADES */
+.historiasdefe{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    width: 100%;
+    padding: 50px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    border-radius: 2%;
 }
+.imghistoriasdefe{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    align-self: center;
+    
+}
+#historiasdefep{
+    font-size: 1.125rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    
+}
+.Calendario{
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    font-size: 0.9em;
+    width:auto;
+    padding: 30px 20px 10px 20px;
+    margin:10px 70px 10px 150px;
+    max-height: 380px;
+    border-radius: 3%;
+}
+.Calendario>h2{
+    font-size: 20px;
+}
+
+#historiasdefe, #Calendario{
+    color: #333;
+    padding: 50px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 70px 0;
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding-bottom: 0px;
+}
+.footer a img{
+    width: 30px;
+    height: 30px;
+    padding-top: 0px;
+    align-self: center;
+}
+
