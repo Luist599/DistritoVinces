@@ -108,6 +108,7 @@
     height: 25px;
     padding-top: 0px;
     align-self: center;
+    overflow: hidden;
   }
 
   .historiadefe {
@@ -289,6 +290,7 @@
     margin: 10px 70px 0 200px;
     max-height: 390px;
     border-radius: 3%;
+    overflow: scroll;
   }
   .Calendario > h2 {
     font-size: 20px;
@@ -299,5 +301,7 @@
   #historiasdefep {
     font-size: 1.2em;
     margin-bottom: 1.5rem;
+    overflow: hidden;
   }
 }
+
