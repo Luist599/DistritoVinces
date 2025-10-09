@@ -1,0 +1,303 @@
+/* Estilos para dispositivos con un ancho máximo de 768px */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px */
+@media screen and (max-width: 520px) {
+  #Inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #Inicio h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #Inicio ul {
+    display: block;
+    gap: 5px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #Inicio ul li,
+  a {
+    display: flex;
+    font-size: 14px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  #Inicio ul li {
+    text-align: center;
+  }
+
+  #Inicio ul li ul {
+    text-align: center;
+    display: none;
+  }
+  #contacto {
+    align-content: center;
+    margin-left: 30px;
+  }
+
+  #imgdistrito {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .distrito1 {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  #historiasdefe {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+    padding: 50px 30px;
+    overflow: hidden;
+  }
+  .imghistoriasdefe {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+
+  .Calendario {
+    margin: 10px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 2%;
+    max-height: 600px;
+    overflow: scroll;
+  }
+  .Calendario > h2 {
+    font-size: 1.5em;
+    overflow: scroll;
+  }
+  .historiadefe,
+  h5,
+  h2 {
+    overflow: hidden;
+  }
+  #historiasdefep {
+    font-size: 1em;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+  .footer a img {
+    width: 25px;
+    height: 25px;
+    padding-top: 0px;
+    align-self: center;
+  }
+
+  .historiadefe {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 521px) and (max-width: 768px) {
+  #Inicio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+  }
+  #Inicio h1 {
+    font-size: 1.85em;
+  }
+
+  #Inicio ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    font-size: ;
+  }
+  #Inicio ul li,
+  a {
+    font-size: 14px;
+  }
+
+  #Inicio ul li ul {
+    display: none;
+  }
+  #contacto {
+    margin-left: 0;
+  }
+  #imgdistrito {
+    display: inline-block;
+    display: flex;
+    align-content: space-around;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
+
+  .distrito1 {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+  }
+
+  #historiasdefe {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+    padding: 50px 30px;
+    border-radius: 2%;
+  }
+  .Calendario {
+    margin: 10px auto;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 5px auto rgba(0, 0, 0, 0.4);
+    border-radius: 2%;
+    overflow: hidden;
+  }
+  .Calendario > h2 {
+    font-size: 1.5em;
+  }
+  .historiadefe {
+    width: 100%;
+  }
+  #historiasdefep {
+    font-size: 1em;
+    margin-bottom: 1.5rem;
+  }
+  .footer a img {
+    width: 25px;
+    height: 25px;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #Inicio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #Inicio h1 {
+    font-size: 2.85rem;
+  }
+
+  #Inicio ul {
+    gap: 5px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #Inicio ul li,
+  a {
+    font-size: 20px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  #Inicio ul li {
+    text-align: center;
+  }
+
+  #Inicio ul li ul {
+    display: none;
+  }
+
+  #contacto {
+    margin-right: 20px;
+  }
+  #Distrito h2{
+    font-size: 2rem; 
+  }
+  #Distrito p{
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  #galeria-section {
+    margin: 6% 0 6% 0;
+    padding: 2% 5% 5% 5%;
+
+  }
+  #imgdistrito {
+    display: inline-block;
+    display: flex;
+    align-content: space-between;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .distrito1 {
+    min-height: 200px;
+    max-height: 400px;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 25px;
+  }
+
+  #historiasdefe {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    padding: 50px 30px;
+    border-radius: 2%;
+    overflow: hidden;
+  }
+  .imghistoriasdefe {
+    
+    margin: 15px;
+  }
+  .Calendario {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1em;
+    padding: 30px 50px 0 50px;
+    margin: 10px 70px 0 200px;
+    max-height: 390px;
+    border-radius: 3%;
+  }
+  .Calendario > h2 {
+    font-size: 20px;
+  }
+  .historiadefe {
+    width: 100%;
+  }
+  #historiasdefep {
+    font-size: 1.2em;
+    margin-bottom: 1.5rem;
+  }
+}

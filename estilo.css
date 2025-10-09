@@ -1,0 +1,260 @@
+/* Archivo de estilos CSS para la página web */
+
+#actividadvinces1 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 27px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    margin-left: 10%;
+
+
+}
+
+#actividadvinces1 h2,
+div {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+div#actividad1>#imagenes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    align-content: space-around;
+
+
+}
+
+.imagen_rama1,
+.imagen_rama1_2 {
+    width: 15rem;
+    margin: 3px 0;
+    border-radius: 5px;
+    align-content: space-around;
+
+}
+
+
+div#actividad1>p {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: start;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+  #galeria-section {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: 100%;
+            padding: 20px 0px 100px 0px;
+            margin: 6% 0 6% 0;
+            display: block;
+            overflow: hidden; 
+            
+        }
+
+       #galeria {
+            text-decoration: none;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+            
+        }
+        
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+        
+    .galeria1 {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .galeria1:hover {
+            transform: scale(1.03);
+        } 
+
+#actdistrito {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+#Distrito h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 27px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    margin-left: 16%;
+}
+
+#distritop {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: start;
+    align-content: center;
+    width: 100%;
+    padding: 1% 9% 1% 9%;
+}
+
+#imgdistrito {
+    display: flex;
+    padding:0px 0px;
+    justify-content: center;
+    margin: 6% 0 6% 0 ;
+}
+
+.distrito1{
+    height: 20rem;
+    width: 20rem;
+    margin: 20px 60px 20px 60px;
+    border-radius: 50%;
+}
+
+
+/*Submenu*/
+
+
+ ul li ul {
+    position:absolute;
+   background-color: var(--Fondo);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    margin-left: -20px;
+    height:fit-content;
+    width: 160px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px  10px 0px;
+    display: none;
+}
+
+ ul li::after ul{
+    margin-top: 5px;
+    margin-left: -20px;
+}
+
+ /* Mostrar submenú cuando tiene la clase 'active' */
+        ul li ul.active {
+            display: flex !important;
+        }
+        
+        /* Estilos de los items del submenú */
+        ul li ul li {
+            width: 100%;
+        }
+        
+        ul li ul li a {
+            background: transparent;
+            border-radius: 0;
+            padding: 8px 20px;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        ul li ul li a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        /* Overlay para cerrar al hacer clic fuera */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: -1;
+        }
+
+ /* HISTORIAS DE FE Y CALENDARIO DE ACTIVIDADES */
+.historiasdefe{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    width: 100%;
+    padding: 50px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.imghistoriasdefe{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    align-self: center;
+    
+}
+#historiasdefep{
+    font-size: 1.125rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    
+}
+.Calendario{
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    font-size: 0.9em;
+    width:auto;
+    padding: 30px 20px 10px 20px;
+    margin:10px 70px 10px 150px;
+    max-height: 380px;
+    border-radius: 3%;
+}
+.Calendario>h2{
+    font-size: 20px;
+}
+
+#historiasdefe, #Calendario{
+    color: #333;
+    padding: 50px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 70px 0;
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding-bottom: 0px;
+}
+.footer a img{
+    width: 30px;
+    height: 30px;
+    padding-top: 0px;
+    align-self: center;
+}
