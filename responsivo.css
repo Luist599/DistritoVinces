@@ -287,8 +287,9 @@
     font-size: 1em;
     padding: 30px 50px 0 50px;
     margin: 10px 70px 0 200px;
-    max-height: 390px;
+    max-height: 400px;
     border-radius: 3%;
+    overflow: scroll;
   }
   .Calendario > h2 {
     font-size: 20px;
@@ -301,3 +302,4 @@
     margin-bottom: 1.5rem;
   }
 }
+
