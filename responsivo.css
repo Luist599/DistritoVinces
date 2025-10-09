@@ -240,7 +240,7 @@
     font-size: 2rem; 
   }
   #Distrito p{
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.5;
   }
   
@@ -256,9 +256,7 @@
 
   .distrito1 {
     min-height: 200px;
-    max-height: 400px;
     min-width: 200px;
-    max-width: 400px;
     margin: 25px;
   }
 
@@ -297,5 +295,6 @@
     margin-bottom: 1.5rem;
   }
 }
+
 
 
