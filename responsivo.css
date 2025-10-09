@@ -243,11 +243,7 @@
     font-size: 1.2em;
     line-height: 1.5;
   }
-  #galeria-section {
-    margin: 6% 0 6% 0;
-    padding: 2% 5% 5% 5%;
-
-  }
+  
   #imgdistrito {
     display: inline-block;
     display: flex;
@@ -301,4 +297,5 @@
     margin-bottom: 1.5rem;
   }
 }
+
 
