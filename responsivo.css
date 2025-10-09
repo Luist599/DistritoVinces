@@ -209,7 +209,7 @@
     text-align: center;
   }
   #Inicio h1 {
-    font-size: 2.85rem;
+    font-size: 1.85rem;
   }
 
   #Inicio ul {
@@ -220,7 +220,7 @@
 
   #Inicio ul li,
   a {
-    font-size: 20px;
+    font-size: 17px;
     padding-bottom: 10px;
     justify-content: center;
     align-items: center;
@@ -301,3 +301,4 @@
     margin-bottom: 1.5rem;
   }
 }
+
