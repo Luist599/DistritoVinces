@@ -209,7 +209,7 @@
     text-align: center;
   }
   #Inicio h1 {
-    font-size: 1.85rem;
+    font-size: 2.85rem;
   }
 
   #Inicio ul {
@@ -220,7 +220,7 @@
 
   #Inicio ul li,
   a {
-    font-size: 17px;
+    font-size: 20px;
     padding-bottom: 10px;
     justify-content: center;
     align-items: center;
@@ -240,10 +240,14 @@
     font-size: 2rem; 
   }
   #Distrito p{
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.5;
   }
-  
+  #galeria-section {
+    margin: 6% 0 6% 0;
+    padding: 2% 5% 5% 5%;
+
+  }
   #imgdistrito {
     display: inline-block;
     display: flex;
@@ -256,7 +260,9 @@
 
   .distrito1 {
     min-height: 200px;
+    max-height: 400px;
     min-width: 200px;
+    max-width: 400px;
     margin: 25px;
   }
 
@@ -295,6 +301,3 @@
     margin-bottom: 1.5rem;
   }
 }
-
-
-
