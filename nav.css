@@ -64,17 +64,14 @@ nav,
 #contacto {
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-between;
     background-color: var(--Encabezados);
-    margin-left: 10px;
-    margin-right: 5px;
 
 }
 
 #contacto {
     display: flex;
     justify-content: space-between;
-    margin-right: 35px;
     width: 2em;
     height: 2em;
     margin-left: 15px;
@@ -91,4 +88,3 @@ img.fondo {
     transition: 1s;
     border-radius: 0.125rem;
 }
-
