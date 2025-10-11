@@ -1,0 +1,342 @@
+/* Estilos para dispositivos con un ancho máximo de 768px */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px */
+@media screen and (max-width: 520px) {
+  #Inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  main {
+    margin: 1%;
+  }
+
+  #Inicio h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #Distrito h2 {
+    margin-left:0;
+    padding-left: 50px;
+  }
+
+  #Inicio > nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav > ul > li > a {
+    display: flex;
+    font-size: 14px;
+  }
+  #Inicio > ul li {
+    text-align: left;
+    padding-bottom: 14px;
+  }
+
+  #Inicio ul li ul {
+    text-align: center;
+    display: none;
+  }
+  #contacto {
+    align-content: center;
+    margin: 15px 0 8px 0;
+  }
+
+  #imgdistrito {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .distrito1 {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  #historiasdefe {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0 50px 0;
+    overflow: scroll;
+  }
+  .historiadefe {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    padding: 50px;
+  }
+  .imghistoriasdefe {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    overflow: scroll;
+  }
+
+  #Calendario {
+    width: 100%;
+    height: 100%;
+    margin: 50px 0 50px 0;
+    padding: 0;
+  }
+  .Calendario {
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 2%;
+    max-height: 300px;
+    overflow: scroll;
+    margin: 0;
+  }
+  .Calendario > h2 {
+    font-size: 1.5em;
+    overflow: scroll;
+  }
+  #historiasdefep {
+    font-size: 1em;
+    margin-bottom: 1.5rem;
+    overflow: scroll;
+  }
+  .footer a img {
+    width: 25px;
+    height: 25px;
+    padding-top: 0px;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 521px) and (max-width: 768px) {
+  #Inicio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+  }
+  #Inicio h1 {
+    font-size: 1.85em;
+    font-weight: 700;
+    text-align: start;
+  }
+
+  #Inicio ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    font-size: ;
+  }
+  #Inicio ul li,
+  a {
+    font-size: 14px;
+  }
+
+  #Inicio ul li ul {
+    display: none;
+  }
+  #contacto {
+    margin: 0;
+  }
+  #imgdistrito {
+    display: inline-block;
+    display: flex;
+    align-content: space-around;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
+
+  .distrito1 {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+  }
+
+  #historiasdefe {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+    padding: 50px 30px;
+    border-radius: 2%;
+    overflow: scroll;
+  }
+  #Calendario {
+    width: 95%;
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .Calendario {
+    margin: 10px auto;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 5px auto rgba(0, 0, 0, 0.4);
+    border-radius: 2%;
+    overflow: scroll;
+  }
+  .Calendario > h2 {
+    font-size: 1.5em;
+  }
+  .historiadefe {
+    width: 100%;
+    margin-top: 100px;
+  }
+  #historiasdefep {
+    font-size: 1em;
+    margin-bottom: 1.5rem;
+    overflow: scroll;
+  }
+  .footer a img {
+    width: 25px;
+    height: 25px;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  #Inicio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #Inicio h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: start;
+    margin: 0;
+  }
+
+  #Inicio ul {
+    gap: 5px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #Inicio ul li,
+  a {
+    font-size: 15px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  #Inicio ul li {
+    text-align: center;
+  }
+
+  #Inicio ul li ul {
+    display: none;
+  }
+
+  #contacto {
+    margin-right: 20px;
+  }
+  #Distrito h2 {
+    font-size: 2rem;
+  }
+  #Distrito p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+
+  #imgdistrito {
+    display: flex;
+    align-content: space-around;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .distrito1 {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    margin: 20px 20px 20px 20px;
+  }
+
+   #galeria-section {
+    margin: 6% 0 6% 0;
+    padding: 2% 5% 5% 5%;
+    width: 100%;
+  }
+
+  #historiasdefe {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0 50px 0;
+    border-radius: 2%;
+  }
+  .imghistoriasdefe {
+    margin: 15px;
+    overflow: scroll;
+    width: 70%;
+    height: auto;
+  }
+  #Calendario {
+    width: 65%;
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .Calendario {
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+  }
+  .Calendario > h2 {
+    font-size: 20px;
+    overflow: hidden;
+  }
+  .historiadefe {
+    width: 100%;
+  }
+  #historiasdefep {
+    font-size: 1.2em;
+    margin-bottom: 1.5rem;
+  }
+}
