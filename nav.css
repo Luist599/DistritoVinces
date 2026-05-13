@@ -9,49 +9,47 @@
   box-sizing: border-box;
 }
 
+#Inicio {
+  height: 55px;
+}
+
 #Inicio h1 {
-  font-family: "Caprasimo", serif;
+  font-family: Cambria, "Caprasimo", serif;
   color: #333;
-  font-weight: 100;
+  font-weight: 700;
   background-color: var(--Encabezados);
   font-size: 36px;
   text-align: left;
-  padding: 4px;
   width: 100%;
-}
-
-main {
-  margin: 50px;
+  margin: 0;
+  padding-left: 20px;
 }
 
 #Inicio,
-.nav{
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: var(--Encabezados);
   width: 100%;
+  position: relative;
 }
-.nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-}
+
 
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: end;
   background-color: var(--Encabezados);
-  margin: 3px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 nav ul li {
   margin: 0 20px;
   list-style: none;
-  font-size: 16px;
+  font-size: 20px;
   align-content: center;
 }
 
@@ -62,74 +60,15 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #007da5;
-  /* Cambia el color al pasar el mouse */
 }
-
-/*Submenu*/
-
-
- ul li ul {
-    position:absolute;
-   background-color: var(--Fondo);
-    border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    margin-top: 10px;
-    margin-left: -20px;
-    height:fit-content;
-    width: 160px;
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0px  10px 0px;
-    display: none;
-}
-
- ul li::after ul{
-    margin-top: 5px;
-    margin-left: -20px;
-}
-
- /* Mostrar submenú cuando tiene la clase 'active' */
-        ul li ul.active {
-            display: flex !important;
-        }
-        
-        /* Estilos de los items del submenú */
-        ul li ul li {
-            width: 100%;
-        }
-        
-        ul li ul li a {
-            background: transparent;
-            border-radius: 0;
-            padding: 8px 20px;
-            width: 100%;
-            transition: background 0.3s;
-        }
-        
-        ul li ul li a:hover {
-            background: rgba(255,255,255,0.1);
-        }
-        
-        /* Overlay para cerrar al hacer clic fuera */
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            z-index: -1;
-        }
-
 
 nav,
-#contacto {
+.contacto {
   background-color: var(--Encabezados);
-  
+
 }
 
-#contacto {
+.contacto {
   width: 2em;
   height: 2em;
   margin-right: 35px;
@@ -137,12 +76,39 @@ nav,
 
 img.fondo {
   object-fit: cover;
-  object-position: unset;
-  display: block;
-  transition: all 0.5s ease;
-  /*object-position: 55% 33.5%;*/
-  height: 400px;
+  object-position: 50% 50%;
+  height: 600px;
   width: 100%;
   transition: 1s;
   border-radius: 0.125rem;
+}
+
+/*---Submenu---*/
+
+ul.submenu-lista {
+  display: none;
+  position: absolute;
+  background-color: var(--Encabezados);
+  /* border-radius: 5px; */
+  top: 100%;
+  width: 150px;
+text-align: center;
+}
+
+ul .submenu-lista li {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+}
+
+ul .submenu-lista li a {
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.submenu:hover .submenu-lista {
+  display: block;
+  margin-right: 100px;
 }
